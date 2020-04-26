@@ -13,7 +13,7 @@
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
 
-   <script src = "./old_well_geojson"></script>
+   <script src = ".data/old_well_4326.geojson"></script>
 
 </head>
 <body>
@@ -31,7 +31,7 @@
             .bindPopup("CH 322")
             .openPopup();
 
-        // L.geoJSON(uncwell).addTo(map)
+        L.geoJSON(uncwell).addTo(map)
         var uncIcon = L.icon({
             iconUrl: 'https://faopharmacy.unc.edu/files/2018/04/Old-Well-Icon-Example.png',
             iconSize: [50,50],
